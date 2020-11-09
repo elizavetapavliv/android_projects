@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/actionModeBackground"
+    tools:context=".SongsActivity">
+
+    <TableLayout
+        android:id="@+id/sTable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/sTable_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGreen">
+
+            <TextView
+                android:id="@+id/sSingerHeader"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/singer"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sSongHeader"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/song"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sPlaysHeader"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/plays"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sUsersHeader"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/users"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/savedSongsView"
+        android:layout_width="393dp"
+        android:layout_height="656dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="192dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sTable_layout">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

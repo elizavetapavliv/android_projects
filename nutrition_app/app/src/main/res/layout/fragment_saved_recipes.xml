@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/s"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.SavedRecipesFragment">
+
+    <TableLayout
+        android:id="@+id/rTable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/table_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGreen">
+
+            <TextView
+                android:id="@+id/recipeHeader"
+                android:layout_width="171dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/recipe"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/caloriesHeader"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/calories"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fatHeader"
+                android:layout_width="113dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fat"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/proteinHeader"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/protein"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cabsHeader"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/cabs"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/recipesView"
+        android:layout_width="0dp"
+        android:layout_height="612dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="32dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rTable_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

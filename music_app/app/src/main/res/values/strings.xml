@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Songs App</string>
+    <string name="id">Id</string>
+    <string name="singer">Singer</string>
+    <string name="song">Song</string>
+    <string name="plays">Plays number</string>
+    <string name="users">Listeners</string>
+    <string name="search">Search</string>
+    <string name="action">Song saved to favorites</string>
+    <string name="details">Details</string>
+    <string name="forecast">Forecast</string>
+    <string name="error">Error</string>
+    <string name="errorMessage">This singer does not exist. Try else</string>
+    <string name="ok">OK</string>
+</resources>

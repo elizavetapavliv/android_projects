@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/actionModeBackground"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="savedSongsClick"
+        android:text="Saved songs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button">
+
+        <TableRow
+            android:id="@+id/table_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGreen">
+
+            <TextView
+                android:id="@+id/singerHeader"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/singer"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/songHeader"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/song"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/playsHeader"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/plays"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/usersHeader"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/users"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/add_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint="@string/singer"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:onClick="searchClick"
+                android:text="@string/search" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/songsView"
+        android:layout_width="411dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_layout"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
