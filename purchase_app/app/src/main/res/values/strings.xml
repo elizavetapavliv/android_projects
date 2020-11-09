@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PurchaseApp</string>
+    <string name="product">Product</string>
+    <string name="number">Number</string>
+    <string name="save">Save</string>
+    <string name="action">Action</string>
+    <string name="message">Choose action to do</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="error">Error</string>
+    <string name="errorMessage">Fill data</string>
+    <string name="successAdd">New purchase was added successfully</string>
+    <string name="successUpdate">Purchase was updated successfully</string>
+    <string name="successDelete">Purchase was deleted successfully</string>
+    <string name="success">Success</string>
+    <string name="ok">OK</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="wrong_credentials_error">Wrong login or password</string>
+    <string name="sign_up_error">First you need to sign up</string>
+    <string name="already_signed_up_error">This login already exists</string>
+</resources>
